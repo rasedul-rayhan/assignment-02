@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="./styles/techwave.css">
     <title>Teach Wave - Assignment-2</title>
 </head>
+
 <body>
     <header>
-        <h1>Hello World</h1>
+        <!-- Navbar Area -->
+        <nav class="flex justify-between items-center max-w-7xl mx-auto py-8">
+            <h2 class="text-3xl font-extrabold text-white">
+                <span class="">Tech</span><span class="bg-gradient-to-r from-pink-500 to-purple-600 
+           bg-clip-text text-transparent">Wave</span>
+            </h2>
+
+            <ul class="flex gap-8 text-white font-medium">
+                <li><a href="">About</a></li>
+                <li><a href="">Episodes</a></li>
+                <li><a href="">Host</a></li>
+            </ul>
+            <button class="text-white py-3 px-5 rounded-full bg-linear-to-r
+               from-pink-500 to-purple-600"><a href="#">Subscribe</a></button>
+        </nav>
+
+        <!-- Banner area  -->
+        <div class=" bg-[url(/assets/hero-bg.png)] bg-cover bg-center h-[760px]">
+            <!-- microphone and circle backgroud -->
+            <div class="banner-content mx-auto pt-24 pb-24">
+                <div class="bg-[url(/assets/hero-circle.png)] bg-center  bg-no-repeat w-[350px] h-[350px] mx-auto mb-10"> 
+                    <!-- New btn top -->
+                    <div class="text-right mb-5 pr-4"><button class="py-2 px-4 rounded-full text-lg font-semibold text-white bg-green-600">NEW</button></div>
+
+                    <img class="mx-auto" src="/assets/microphone.png" alt="">  
+                </div>
+                <!-- Banner Title and Description -->
+                <div class="text-center">
+                    <h1 class="text-6xl font-extrabold text-white">TechWave</h1>
+                    <p class="text-white">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+
+                    <!-- listen and spotify btn -->
+                    <div class="mt-6">
+                        <button class="rounded-full py-3 px-5 bg-linear-to-r
+               from-pink-500 to-purple-600 text-white font-semibold">Listen o n Spotify<a href=""></a></button>
+                        
+                        <button class="rounded-full py-3 px-5 border  border-green-400 text-green-400 font-semibold">Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
     </header>
 </body>
+
 </html>
