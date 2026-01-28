@@ -6,34 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./styles/techwave.css">
     <title>Teach Wave - Assignment-2</title>
 </head>
 
 <body>
-    <header>
+    <header class="bg-[#1A0B2E]">
         <!-- Navbar Area -->
-        <nav class="flex justify-between items-center max-w-7xl mx-auto py-8">
+        <nav class="navbar flex justify-between items-center py-8">
             <h2 class="text-3xl font-extrabold text-white">
                 <a href=""><span class="">Tech</span><span class="bg-gradient-to-r from-pink-500 to-purple-600 
            bg-clip-text text-transparent">Wave</span></a>
             </h2>
 
-            <ul class="flex gap-8 text-white font-medium">
-                <li><a href="">About</a></li>
-                <li><a href="">Episodes</a></li>
-                <li><a href="">Host</a></li>
-            </ul>
-            <a href="https://www.spotify.com/bd-en/premium/"
-                class="inline-block rounded-full py-3 px-5 bg-linear-to-r from-pink-500 to-purple-600 text-white font-semibold transition-transform hover:scale-105 active:scale-95">
-                Subscribe
-            </a>
+            <div class="menu-item hidden md:block">
+                <ul class="flex gap-8 text-white font-medium">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Episodes</a></li>
+                    <li><a href="">Host</a></li>
+                </ul>
+            </div>
+            <div class="hidden md:block">
+                <a href="https://www.spotify.com/bd-en/premium/"
+                    class="inline-block rounded-full py-3 px-5 bg-linear-to-r from-pink-500 to-purple-600 text-white font-semibold transition-transform hover:scale-105 active:scale-95">
+                    Subscribe
+                </a>
+            </div>
+            <div class="md:hidden block">
+                <a href="#"><img class="w-full" src="./assets/hamburger-menu.png" alt=""></a>
+            </div>
         </nav>
 
         <!-- Banner area  -->
-        <div class=" bg-[url(./assets/hero-bg.png)] bg-cover bg-center h-[760px]">
+        <div class="banner bg-[url(./assets/hero-bg.png)] bg-cover bg-center px-6">
             <!-- microphone and circle backgroud -->
-            <div class="banner-content mx-auto pt-24 pb-24">
+            <div class="banner-content mx-auto py-24">
                 <div
                     class="bg-[url(./assets/hero-circle.png)] bg-center  bg-no-repeat w-[350px] h-[350px] mx-auto mb-10">
                     <!-- New btn top -->
@@ -63,12 +74,101 @@
                 </div>
 
             </div>
-
-
-
         </div>
     </header>
-    
+
+    <main>
+        <section class="about-podcast bg-[#1A0B2E]">
+            <div class="about-podcast-content text-center">
+                <div class="md:max-w-4/6 md:py-20 py-10 mx-auto ">
+                    <h2 class="text-5xl font-bold text-white mb-6">About the Podcast</h2>
+                    <p class="text-white mb-5">TechWave is your go-to podcast for staying ahead in the fast-paced
+                        world
+                        of
+                        technology.
+                        We break down complex topics into digestible insights, explore productivity strategies that
+                        actually
+                        work,
+                        and share stories of personal growth from industry leaders.
+                    </p>
+
+                    <p class="text-white">Join thousands of young professionals and tech enthusiasts who start their
+                        day
+                        with TechWave.</p>
+                </div>
+
+                <hr>
+                <!-- achivements -->
+                <div class="grid grid-cols-2 gap-10 py-10 md:grid-cols-4 md:py-20">
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-green-400">150K+</h2>
+                        <p class="text-white">Monthly Listeners</p>
+                    </div>
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-green-400">200+</h2>
+                        <p class="text-white">Episodes Published</p>
+                    </div>
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-green-400">4.9★</h2>
+                        <p class="text-white">Average Rating</p>
+                    </div>
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-green-400">50+</h2>
+                        <p class="text-white">Industry Experts</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="why-techwave bg-[#230E3D]">
+            <div class="why-techwave-content py-28">
+                <h2 class="text-5xl font-bold text-white pb-6 text-center">Why Choose TechWave</h2>
+
+                <!-- cards -->
+                <div class="techwave-cards grid grid-cols-1 md:grid-cols-3 gap-7">
+                    <div class="headphone md:row-span-2 bg-[#351165] p-10 rounded-4xl">
+                        <img src="./assets/headphone.png" alt="" class="mb-4">
+                        <h3 class="text-2xl font-bold text-white mb-4">Premium Audio Quality</h3>
+                        <p class="text-white opacity-60">Experience crystal-clear sound with professional-grade
+                            recording
+                            equipment and expert audio engineering. Every episode is mastered for optimal listening
+                            across
+                            all devices and platforms.</p>
+                    </div>
+
+
+                    <div class="device md:col-span-2 bg-[#351165] p-10 rounded-4xl">
+                        <img src="./assets/device.png" alt="" class="mb-4">
+                        <h3 class="text-2xl font-bold text-white mb-4">Mobile Friendly</h3>
+                        <p class="text-white opacity-60">Listen on the go with seamless mobile experience and offline
+                            downloads.</p>
+                    </div>
+                    <div class="location md:col-span-2 bg-[#351165] p-10 rounded-4xl">
+                        <img src="./assets/location.png" alt="" class="mb-4">
+                        <h3 class="text-2xl font-bold text-white mb-4">Global Community</h3>
+                        <p class="text-white opacity-60">Connect with tech enthusiasts from over 120 countries
+                            worldwide.
+                        </p>
+                    </div>
+                    <div class="exclusive bg-[#351165] p-10 rounded-4xl">
+                        <img src="./assets/zap-fast.png" alt="" class="mb-4">
+                        <h3 class="text-2xl font-bold text-white mb-4">Exclusive Interviews</h3>
+                        <p class="text-white opacity-60">Get unprecedented access to industry titans, startup founders,
+                            and tech visionaries. Our host secures exclusive conversations you won't find anywhere else,
+                            diving deep into their journeys, failures, and success strategies.</p>
+                    </div>
+                    <div class="resource md:col-span-2 bg-[#351165] p-10 rounded-4xl">
+                        <img src="./assets/resource.png" alt="" class="mb-4">
+                        <h3 class="text-2xl font-bold text-white mb-4">Rich Resources</h3>
+                        <p class="text-white opacity-60">Access show notes, transcripts, and additional learning
+                            materials for every episode.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>

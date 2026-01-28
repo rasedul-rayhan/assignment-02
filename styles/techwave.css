@@ -4,15 +4,12 @@
 body{
     font-family: "Inter", sans-serif;
 }
-/* color variable declaration*/
-:root{
-    --bg-blue: #1A0B2E;
-    --color-green: #00FF88;
-    --color-white: #FFFFFF;
-}
 
-/* header area styles */
-header{
-    background-color: var(--bg-blue);
+.about-podcast-content,
+.why-techwave-content,
+.navbar{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
-
