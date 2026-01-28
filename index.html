@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="./styles/techwave.css">
     <title>Teach Wave - Assignment-2</title>
 </head>
@@ -253,12 +252,12 @@
                 </div>
 
             </div>
+
         </section>
 
         <section class="meet-the-host bg-[#1A0B2E]">
-            <div class="meet-the-host-content ">
+            <div class="meet-the-host-content pb-28">
                 <h2 class="text-5xl font-bold text-white pb-6 text-center">Meet the Host</h2>
-
                 <div class="rounded-3xl p-10 bg-[#250D44] md:flex gap-6 items-center justify-center">
                     <img class="block mx-auto mb-4" src="./assets/host.png" alt="">
                     <div class="text-center md:max-w-4/5 md:text-left">
@@ -268,22 +267,32 @@
                             companies. Through TechWave, Alex shares insights from industry leaders and practical advice
                             for anyone looking to grow in tech.</p>
 
-                        <div class="social-icon flex gap-4 mt-4">
-                            <div class="border border-[#533C72] p-2.5 rounded-full">
-                                <img src="./assets/linkedin.png" alt="" class="h-5 w-5">
+                        <div class="social-icon flex justify-center md:justify-start gap-4 mt-4 ">
+                            <div class="border border-[#533C72] p-2.5 rounded-full hover:bg-[#390779]">
+                                <a href="">
+                                    <img src="./assets/linkedin.png" alt="" class="h-5 w-5">
+                                </a>
                             </div>
 
-                            <div class="border border-[#533C72] p-2.5 rounded-full">
-                                <img src="./assets/x.png" alt="" class="h-5 w-5">
+                            <div class="border border-[#533C72] p-2.5 rounded-full hover:bg-[#390779]">
+                                <a href="">
+                                    <img src="./assets/x.png" alt="" class="h-5 w-5">
+                                </a>
                             </div>
 
-                            <div class="border border-[#533C72] p-2.5 rounded-full">
-                                <img src="./assets/x.png" alt="" class="h-5 w-5">
+                            <div class="border border-[#533C72] p-2.5 rounded-full hover:bg-[#390779]">
+                                <a href="">
+                                    <img src="./assets/instagram.png" alt="" class="h-5 w-5">
+                                </a>
                             </div>
 
-                            <div class="border border-[#533C72] p-2.5 rounded-full">
-                                <img src="./assets/instagram.png" alt="" class="h-5 w-5">
+                            <div class="border border-[#533C72] p-2.5 rounded-full hover:bg-[#390779]">
+                                <a href="">
+                                    <img src="./assets/youtube.png" alt="" class="h-5 w-5">
+                                </a>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -292,17 +301,21 @@
 
     </main>
 
-    <footer class="bg-[url(./assets/footer-bg.png)] bg-cover bg-center p-28">
-        <div>
-            <h1>TechWave</h1>
-            <div>
-                <div>Spotify</div>
-                <div>Apple Podcasts</div>
-                <div>YouTube</div>
-                <div>Twitter</div>
+    <footer class="bg-[url(./assets/footer-bg.png)] bg-cover bg-center py-28">
+        <div class="footer-content text-center overflow-hidden">
+            <h2 class="text-6xl font-extrabold text-center">
+                <span class="text-white">Tech</span><span class="bg-gradient-to-r from-pink-500 to-purple-600 
+           bg-clip-text text-transparent">Wave</span>
+            </h2>
+            <div class="flex justify-center flex-wrap gap-5 md:gap-10 text-white my-8">
+                <div><a href="#">Spotify</a></div>
+                <div><a href="#">Apple Podcasts</a></div>
+                <div><a href="#">YouTube</a></div>
+                <div><a href="#">Twitter</a></div>
             </div>
-            <p>© 2026 TechWave Podcast. All rights reserved.</p>
+            <p class="text-white">© 2026 TechWave Podcast. All rights reserved.</p>
         </div>
     </footer>
 </body>
+
 </html>
